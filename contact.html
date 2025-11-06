@@ -1,0 +1,147 @@
+<!-- hazır html kodu getirmek için ! işareti koy -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<!--!header section start-->
+
+<body>
+   <header class="header">
+     <a href="index.html" class="logo"> <!-- a etiketini çağırmak için class ile isimlendirdik -->
+        <img src="images/logo.png" alt="logo"/>   <!-- resim yoksa logo yazısı çıksın -->
+        <!-- yorum yazmak için ctrl+k+c -->
+    </a>
+    <nav class="navbar">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html" >Menu</a>
+<a href="products.html">Products</a>
+<a href="review.html">Review</a>
+<a href="contact.html" class="active">Contact</a>
+<a href="blogs.html">Blogs</a>
+    </nav>
+    <div class="buttons">
+        <button id="search-btn">
+            <i class="fas fa-search"></i>
+            <!-- https://cdnjs.com/libraries/font-awesome  buradan link aldık titlenin üstüne yapıştırdık -->
+        </button>
+        <button id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="search-form">
+        <input type="text" class="search-input" id="search-box" placeholder="search here"/>
+        <i class="fas fa-search"></i>
+    </div>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="images/menu-1.png" alt="menu"/>
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="images/menu-2.png" alt="menu"/>
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="images/menu-3.png" alt="menu"/>
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="images/menu-4.png" alt="menu"/>
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+   </header>
+   <!--!header section end-->
+
+         <!--!contact section start-->
+      <section class="contact" id="contact">
+        <h1 class="heading">contact <span>us</span></h1>
+        <div class="row">
+            <iframe 
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24095.
+            856231904916!2d29.021587371826172!3d40.98187434835804!2m3!1f0!2f0!3f0!3m2!
+            1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac790b17ba89d%3A0xd2d24ea0437a7ee2!2zS2
+            FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1762061135378!5m2!1str!2str" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--haritadan seçtiğimiz noktayı paylaşa tıklayıp harita yerleştirmeye tıklayacaz-->
+            <!--css ayarlarını burdan sildi çünkü ayaralrı css sayfasından yapacaz-->
+        <form>
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="name" />
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="name" />
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-phone"></i>
+                <input type="number" placeholder="name" />
+            </div>
+            <input type="submit" class="btn" value="contact now">
+        </form>
+        </div>
+        </section>
+      <!--!contact section end-->
+
+      <!--!footer section start-->
+      <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search"/>
+            <button class="btn btn-primary">search</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Products</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="credit">
+            created by <span>Betül Köksal</span> | all rights reserved
+        </div>
+      </section>
+
+      <!--!footer section end-->
+      <script src="js/script.js"></script>
+</body>
+</html>
